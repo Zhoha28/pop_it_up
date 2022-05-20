@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".displayProduct">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="407dp"
+        android:layout_height="158dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/navbarend"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/navbarstart">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="312dp"
+            android:layout_height="85dp"
+            android:src="@drawable/log2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/navbarstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toStartOf="@+id/linear"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/navbarend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="67dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/linear"
+        app:layout_constraintGuide_percent="0.2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/navbarstart"
+        app:layout_constraintEnd_toStartOf="@+id/linear"
+        app:layout_constraintGuide_percent="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/homebannerend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/rightend"
+        app:layout_constraintGuide_end="382dp"
+        />
+
+
+    <Button
+        android:id="@+id/buyNow"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="235dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/primary"
+        android:text="Buy Now"
+        android:textSize="20sp"
+        app:icon="@drawable/right_arrows"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp"
+        app:iconSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productDetails"
+        app:layout_constraintVertical_bias="0.362" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="269dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:text="Product Name"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productImageView" />
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="287dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear"
+        app:srcCompat="@drawable/homepage" />
+
+    <TextView
+        android:id="@+id/productDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productPrice"
+        app:layout_constraintVertical_bias="0.177" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="$ 10.99 /-"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

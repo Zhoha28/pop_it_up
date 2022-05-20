@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">IndividualProdjectZhohaDamani</string>
+
+    <string-array name="products">
+        <item>Venom T-shirt</item>
+        <item>Clash of clans T-shirt</item>
+        <item>God Of War T-shirts</item>
+        <item>Venom T-shirt</item>
+        <item>Clash of clans T-shirt</item>
+        <item>God Of War T-shirts</item>
+
+    </string-array>
+
+    <string-array name="description">
+        <item>Unisex T-shirt</item>
+        <item>Unisex T-shirt</item>
+        <item>Unisex T-shirt</item>
+
+
+    </string-array>
+</resources>

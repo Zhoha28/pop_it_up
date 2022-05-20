@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F0F0F"
+    tools:context=".thankyoupage">
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="407dp"
+        android:layout_height="158dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/navbarend"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/navbarstart">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="312dp"
+            android:layout_height="85dp"
+            android:src="@drawable/log2" />
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/navbarstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintEnd_toStartOf="@+id/linear"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/navbarend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="67dp"
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toStartOf="@+id/linear"
+        app:layout_constraintGuide_percent="0.38"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftstart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="7dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/navbarstart"
+        app:layout_constraintEnd_toStartOf="@+id/linear"
+        app:layout_constraintGuide_percent="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90999997" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
+
+    <TextView
+        android:id="@+id/thankyouTitle"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Thank you."
+        android:textAlignment="center"
+
+        android:textAllCaps="true"
+        android:textColor="#FD4596"
+        android:textSize="24sp"
+        app:autoSizeMaxTextSize="40sp"
+
+        app:autoSizeMinTextSize="30sp"
+        app:autoSizeStepGranularity="10sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:padding="10dp"
+        android:text="Thank you for your purchase and for supporting our small business, it means alot. You will receive a confirmation email on the email address below :"
+        android:textAlignment="center"
+        android:textColor="#BCFFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thankyouTitle" />
+
+    <TextView
+        android:id="@+id/emailaddress"
+        android:layout_width="171dp"
+        android:layout_height="41dp"
+        android:text="demo@gmail.com"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/rightend"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/leftstart"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.295" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/phoneNumber"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    tools:context=".checkOutForm">
+
+    <EditText
+        android:id="@+id/creditcardnumber"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="68dp"
+        android:backgroundTint="#FDFDFD"
+        android:drawableTint="#00FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="Credit Card Number"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radiocc" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginEnd="57dp"
+        android:backgroundTint="#FDFDFD"
+        android:drawableTint="#00FFFFFF"
+        android:ems="10"
+        android:inputType="textShortMessage"
+        android:text="Address"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline17"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline16" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FDFDFD"
+        android:drawableTint="#00FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Phone Number"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    <EditText
+        android:id="@+id/emailAddress"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FDFDFD"
+        android:drawableTint="#00FFFFFF"
+        android:ems="10"
+        android:inputType="textWebEmailAddress"
+        android:text="Email"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline14" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.91" />
+
+    <TextView
+        android:id="@+id/productNameCheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="Check Out"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/breadcrumbtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <TextView
+        android:id="@+id/breadcrumbtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="PRODUCT / CHECKOUT"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#A4FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline8"
+        app:layout_constraintVertical_bias="0.822" />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="296dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FDFDFD"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.55" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="129dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="date"
+        android:text="Expiry Date"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toStartOf="@+id/breadcrumbtext"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/creditcardnumber"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="122dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:inputType="number"
+        android:text="CVV"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/guideline13"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.12" />
+
+    <RadioGroup
+        android:id="@+id/radiocc"
+        android:layout_width="355dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="53dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/creditcardnumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline17"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <RadioButton
+            android:id="@+id/debitcard"
+            android:layout_width="125dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:buttonTint="#FFFFFF"
+            android:text="Debit Card"
+            android:textColor="#FFFFFF" />
+
+        <RadioButton
+            android:id="@+id/creditcard"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:buttonTint="#FFFFFF"
+            android:minHeight="48dp"
+            android:text="Credit Card"
+            android:textColor="#FFFFFF"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/shopCtaButton"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:backgroundTint="@color/primary"
+        android:padding="10dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:text="Buy Now"
+        android:textSize="18sp"
+        app:icon="@drawable/right_arrows"
+        app:iconGravity="textEnd"
+        app:iconPadding="8dp"
+        app:iconSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.38" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="189dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/productNameCheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/log2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
